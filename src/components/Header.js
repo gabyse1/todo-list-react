@@ -1,5 +1,5 @@
 const Header = () => (
-  <header className="task__header">
+  <header className="todo__header">
     <h1>Todo List</h1>
   </header>
 );

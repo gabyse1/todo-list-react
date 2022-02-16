@@ -1,4 +1,4 @@
-import './App.css';
+import './scss/App.scss';
 import { useEffect, useState } from 'react';
 import Header from './components/Header';
 import InputTodo from './components/InputTodo';
