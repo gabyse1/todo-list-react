@@ -1,0 +1,162 @@
+@import 'typography';
+@import 'mixins';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  @include font;
+}
+
+.root,
+.todo__container {
+  width: 100%;
+}
+
+.todo__container {
+  @include flex-colum;
+
+  > * {
+    width: 90%;
+    padding: 1rem;
+    margin: 1rem auto;
+  }
+
+  @include mq {
+    > * {
+      max-width: 600px;
+    }
+  }
+}
+
+input[type=text],
+button {
+  width: 100%;
+  font-family: "Truculenta", sans-serif;
+  font-size: 1.15rem;
+  background: transparent;
+}
+
+input[type=text] {
+  height: 3rem;
+  padding: 0 2.5rem 0 1rem;
+  line-height: 3rem;
+  font-style: italic;
+  color: $c-base;
+  border: 1px solid $c-accent;
+}
+
+input[type=text]:focus {
+  border: 1px solid $c-base;
+  outline: none;
+}
+
+button {
+  width: 2.5rem;
+  height: 100%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  display: flex;
+
+  @include flex-center;
+}
+
+button svg {
+  fill: rgb(161, 161, 161);
+}
+
+button:hover {
+  text-decoration: underline;
+}
+
+button:hover svg {
+  fill: #08b9ae;
+}
+
+.todo__header {
+  padding: 1rem 2rem;
+  background-color: $c-accent;
+  color: #fff;
+
+  h1 {
+    margin: 0;
+    padding: 1rem !important;
+    text-align: center;
+  }
+}
+
+.todo__form {
+  padding: 0;
+  display: flex;
+
+  @include flex-center;
+
+  position: relative;
+
+  button {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+  }
+}
+
+.todo__list {
+  list-style: none;
+  padding: 0;
+
+  @include flex-colum;
+
+  .todo__list-item {
+    width: 100%;
+
+    @include flex-row;
+
+    > * {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      padding: 0.5rem 0;
+      position: relative;
+
+      > * {
+        margin-right: 0.5rem;
+      }
+
+      :last-child {
+        margin-right: 0;
+      }
+
+      input[type=text] {
+        height: 2rem;
+        line-height: 2rem;
+      }
+
+      .btn__task-checklist {
+        border: none;
+        outline: none;
+      }
+
+      button {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+
+        svg {
+          fill: #ef3c7b;
+        }
+      }
+
+      button:hover svg {
+        fill: #08b9ae;
+      }
+    }
+  }
+}
