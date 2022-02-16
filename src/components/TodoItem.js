@@ -33,7 +33,7 @@ const TodoItem = ({
       <div onDoubleClick={handleEditing} style={viewMode} className="list-item-view">
         <input type="checkbox" className="btn__task-checklist" onChange={() => handleChange(todo.id)} checked={todo.done} />
         <span style={todo.done ? completedStyle : null}>{todo.task}</span>
-        <button type="button" className="btn__task-remove" onClick={() => deleteTask(todo.id)}><FaTrashAlt /></button>
+        <button type="button" aria-label="Delete-task" className="btn__task-remove" onClick={() => deleteTask(todo.id)}><FaTrashAlt /></button>
       </div>
       <input
         type="text"

@@ -18,7 +18,7 @@ const InputTodo = ({ addTask }) => {
   return (
     <form className="todo__form" onSubmit={handleSubmit}>
       <input type="text" placeholder="Add todo..." onChange={changeField} value={title} />
-      <button type="submit"><AiOutlineEnter /></button>
+      <button type="submit" aria-label="Add task"><AiOutlineEnter /></button>
     </form>
   );
 };
