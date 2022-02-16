@@ -1,20 +1,27 @@
-# To do list
+# Todo list with React
 
-"To-do list" is a tool that helps to organize your day. It simply lists the things that you need to do and allows you to mark them as complete.
+"Todo list" is a tool that helps to organize your day. It simply lists the things that you need to do and allows you to mark them as complete.
+
+![screenshot](./screenshot.png)
 
 
 ## Features
 
-- It is based in a minimalistic design.
-- It render the task list dinamically using react.
-- Create a new task by entering the description in the field *Add todo* and pressing the *enter key*.
+- It is based in a minimalistic design using React.
+- The task list is dinamically rendered using React.
+- Create a new task by entering the description in the field *Add todo...* and pressing the *enter key*.
 - Delete a task by clicking on its trash icon.
 - Edit any task already listed by doubleclicking on its description.
 
 
 ## Built With
 
-- Javascript / React / CSS
+- Javascript / React / SCSS
+
+
+## Live Demo
+
+[Todo List React](https://gabyse1.github.io/todo-list-react)
 
 
 ## Getting Started
@@ -24,11 +31,10 @@ To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
-- Have a computer
+- Have git installed on your local computer.
 
 ### Install
 
-- Install git on your local computer.
 - Clone this repository to your local computer. Choose the location you prefer.
 - Run the command *npm install* to install all project's dependencies.
 
