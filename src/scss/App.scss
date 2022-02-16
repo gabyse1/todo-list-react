@@ -63,6 +63,7 @@ button {
   outline: none;
   cursor: pointer;
   display: flex;
+
   @include flex-center;
 }
 
@@ -93,7 +94,9 @@ button:hover svg {
 .todo__form {
   padding: 0;
   display: flex;
+
   @include flex-center;
+
   position: relative;
 
   button {
@@ -107,10 +110,12 @@ button:hover svg {
 .todo__list {
   list-style: none;
   padding: 0;
+
   @include flex-colum;
 
   .todo__list-item {
     width: 100%;
+
     @include flex-row;
 
     > * {
@@ -119,7 +124,7 @@ button:hover svg {
       align-items: center;
       padding: 0.5rem 0;
       position: relative;
-      
+
       > * {
         margin-right: 0.5rem;
       }
@@ -149,7 +154,7 @@ button:hover svg {
         }
       }
 
-      button:hover svg{
+      button:hover svg {
         fill: #08b9ae;
       }
     }
